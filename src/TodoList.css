@@ -71,11 +71,39 @@
     width: 30px;
     height: 30px;
     background-color: transparent;
+    transition: 250ms;
 }
+
+
+.delete:hover,
+.delete:focus {
+  box-shadow: 0 0.5em 0.5em 0.1em rgb(235, 83, 75);
+  transform: translateY(-0.25em);
+}
+.complete:hover,
+.complete:focus {
+  box-shadow: 0 0.5em 0.5em 0.1em rgb(132,214,251);
+  transform: translateY(-0.25em);
+}
+.cancel:hover,
+.cancel:focus {
+  box-shadow: 0 0.5em 0.5em 0.1em rgb(242,171,87);
+  transform: translateY(-0.25em);
+}
+.move-up:hover,
+.move-up:focus,
+.move-down:hover,
+.move-down:focus  {
+  box-shadow: 0 0.5em 0.5em 0.1em rgb(160,145,241);
+  transform: translateY(-0.25em);
+}
+
 
 .btn svg{
     width: 30px;
     height: 30px;
+    position: relative;
+    left: -6px;
 }
 
 .add-task-button{
