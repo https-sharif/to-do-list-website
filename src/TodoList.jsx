@@ -1,6 +1,6 @@
 import React , {useState} from "react";
 import './TodoList.css';
-import deleteIcon from './delete.svg'
+
 function TodoList(){
 
     const [ongoingTasks,setOngoingTasks] = useState([]);
