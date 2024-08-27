@@ -14,12 +14,12 @@ A simple and interactive To-Do List application built with React. This app allow
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/sharif-islam96403/to-do-list-website.git
    ```
 
 2. **Navigate to the project directory:**
    ```bash
-   cd <project-directory>
+   cd to-do-list-website
    ```
 
 3. **Install dependencies:**
@@ -32,7 +32,7 @@ A simple and interactive To-Do List application built with React. This app allow
    npm start
    ```
 
-5. **Open your browser and visit `http://localhost:3000` to see the app in action.**
+5. **Open your browser and visit `http://localhost:3000/to-do-list-website` to see the app in action.**
 
 ## Usage
 
