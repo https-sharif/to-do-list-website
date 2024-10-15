@@ -1,4 +1,4 @@
-# React To-Do List
+# To-Do-List Website
 
 A simple and interactive To-Do List application built with React. This app allows users to add, complete, cancel, and delete tasks. It provides a clear separation between ongoing, completed, and cancelled tasks.
 
@@ -14,7 +14,7 @@ A simple and interactive To-Do List application built with React. This app allow
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/sharif-islam96403/to-do-list-website.git
+   git clone https://github.com/https-sharif/to-do-list-website.git
    ```
 
 2. **Navigate to the project directory:**
@@ -32,7 +32,7 @@ A simple and interactive To-Do List application built with React. This app allow
    npm start
    ```
 
-5. **Open your browser and visit `http://localhost:3000/to-do-list-website` to see the app in action.**
+5. **Copy the link in the terminal and open it in you browser to see the app in action.**
 
 ## Usage
 
@@ -52,7 +52,7 @@ A simple and interactive To-Do List application built with React. This app allow
 
 ## Demo
 
-**You can view the live demo [here](https://sharif-islam96403.github.io/to-do-list-website/)**
+**You can view the live demo [here](https://https-sharif.github.io/to-do-list-website/)**
 
 ## Folder Structure
 
