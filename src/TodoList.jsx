@@ -1,11 +1,11 @@
-import React , {useState} from "react";
+import React , {useEffect, useState} from "react";
 import './TodoList.css';
 
 function TodoList(){
-
-    const [ongoingTasks,setOngoingTasks] = useState([]);
-    const [completedTasks,setCompletedTasks] = useState([]);
-    const [cancelledTasks,setCancelledTasks] = useState([]);
+    const itemFromLocalStorage = JSON.parse(localStorage.getItem("todoList"));
+    const [ongoingTasks,setOngoingTasks] = useState(itemFromLocalStorage ? itemFromLocalStorage.ongoingTasks : []);
+    const [completedTasks,setCompletedTasks] = useState(itemFromLocalStorage ? itemFromLocalStorage.completedTasks : []);
+    const [cancelledTasks,setCancelledTasks] = useState(itemFromLocalStorage ? itemFromLocalStorage.cancelledTasks : []);
     const [newTask,setNewTask] = useState("");
 
     function handleInput(event){
@@ -65,6 +65,10 @@ function TodoList(){
             setOngoingTasks(updatedTasks);
         }
     }
+
+    useEffect(() => {
+        localStorage.setItem("todoList", JSON.stringify({ ongoingTasks, completedTasks, cancelledTasks }));
+    }, [ongoingTasks, completedTasks, cancelledTasks]);
 
     return (
         <div className="main-container">
